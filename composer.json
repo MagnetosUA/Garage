@@ -14,5 +14,10 @@
             "name": "Aleks Sushitskiy",
             "email": "magnetos.ua@gmail.com"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": {
+            "Vehicles\\": "src/Vehicles/"
+        }
+    }
 }
