@@ -3,16 +3,16 @@
 namespace Tests;
 
 use PHPUnit\Framework\TestCase;
-use Vehicles\Car;
+use Vehicles\Truck;
 
-class CarTest extends TestCase
+class TruckTest extends TestCase
 {
     private $object;
-    private $name = "MyCar";
+    private $name = "MyTruck";
 
     protected function setUp()
     {
-        $this->object = new Car($this->name);
+        $this->object = new Truck($this->name);
     }
 
     public function testAdd()

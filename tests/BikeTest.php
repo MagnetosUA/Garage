@@ -3,24 +3,23 @@
 namespace Tests;
 
 use PHPUnit\Framework\TestCase;
-use Vehicles\Car;
+use Vehicles\Bike;
 
-class CarTest extends TestCase
+class BikeTest extends TestCase
 {
     private $object;
-    private $name = "MyCar";
+    private $name = "MyBike";
 
     protected function setUp()
     {
-        $this->object = new Car($this->name);
+        $this->object = new Bike($this->name);
     }
 
     public function testAdd()
     {
         $this->assertEquals($this->name . " is ". $this->object->moveAction . PHP_EOL, $this->object->move());
         $this->assertEquals( $this->name . " is " . $this->object->stopAction . PHP_EOL, $this->object->stop());
-        $this->assertEquals( $this->name . ' music switched on' . PHP_EOL, $this->object->musicOn());
-        $this->assertEquals( $this->name . " refuels " . $this->object->fuel . PHP_EOL, $this->object->refuel());
+        $this->assertEquals( 'The bicycle does not consume fuel :)' . PHP_EOL, $this->object->refuel());
     }
 
     protected function tearDown()

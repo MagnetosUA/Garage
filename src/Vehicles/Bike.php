@@ -8,6 +8,6 @@ class Bike extends Vehicle
 {
     public function refuel()
     {
-        echo "The bicycle does not consume fuel :)" . PHP_EOL;
+        return "The bicycle does not consume fuel :)" . PHP_EOL;
     }
 }
