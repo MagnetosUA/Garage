@@ -17,7 +17,9 @@
     ],
     "autoload": {
         "psr-4": {
-            "Vehicles\\": "src/Vehicles/"
+            "Vehicles\\": "src/Vehicles/",
+            "Vehicles\\Abstracts\\": "src/Vehicles/abstracts/",
+            "Auxiliary\\": "src/Auxiliary/"
         }
     }
 }

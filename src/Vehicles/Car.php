@@ -2,7 +2,7 @@
 
 namespace Vehicles;
 
-use Vehicles\Vehicle;
+use Vehicles\Abstracts\Vehicle;
 
 class Car extends Vehicle
 {
