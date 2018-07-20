@@ -26,3 +26,4 @@ class VehiclesFactory
         $this->vehicles[] = new Bike('Ukraine');
     }
 }
+

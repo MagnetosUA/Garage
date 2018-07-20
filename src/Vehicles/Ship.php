@@ -12,18 +12,19 @@ class Ship extends Vehicle
 
     public function liftAnchor()
     {
-        echo $this->name . ' lift anchor' . PHP_EOL;
+        return $this->name . ' lift anchor' . PHP_EOL;
     }
 
     public function lowerAnchor()
     {
-        echo $this->name . ' lower the anchor' . PHP_EOL;
+        return $this->name . ' lower the anchor' . PHP_EOL;
     }
 
     public function initMethods()
     {
-        $this->liftAnchor();
-        $this->lowerAnchor();
+        echo $this->liftAnchor();
+        echo $this->lowerAnchor();
         parent::initMethods();
     }
 }
+

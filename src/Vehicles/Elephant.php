@@ -8,6 +8,6 @@ class Elephant extends Vehicle
 {
     public function refuel()
     {
-        echo 'The elephant eats grass' . PHP_EOL;
+        return 'The elephant eats grass' . PHP_EOL;
     }
 }

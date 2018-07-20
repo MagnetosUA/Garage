@@ -10,6 +10,12 @@ class Car extends Vehicle
 
     public function musicOn()
     {
-        echo $this->name . ' music switched on';
+        return $this->name . ' music switched on' . PHP_EOL;
+    }
+
+    public function initMethods()
+    {
+        $this->musicOn();
+        parent::initMethods();
     }
 }

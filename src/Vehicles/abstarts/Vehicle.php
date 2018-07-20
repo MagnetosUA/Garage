@@ -16,24 +16,24 @@ abstract class Vehicle
 
     public function move()
     {
-        echo $this->name . " is ". $this->moveAction . PHP_EOL;
+        return $this->name . " is ". $this->moveAction . PHP_EOL;
     }
 
     public function stop()
     {
-        echo $this->name . " is " . $this->stopAction . PHP_EOL;
+        return $this->name . " is " . $this->stopAction . PHP_EOL;
     }
 
     public function refuel()
     {
-        echo $this->name . " refuels " . $this->fuel . PHP_EOL;
+        return $this->name . " refuels " . $this->fuel . PHP_EOL;
     }
 
     public function initMethods()
     {
-        $this->move();
-        $this->stop();
-        $this->refuel();
+        echo $this->move();
+        echo $this->stop();
+        echo $this->refuel();
         echo PHP_EOL . PHP_EOL;
     }
 }

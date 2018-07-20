@@ -6,7 +6,7 @@
         "php": "7.2.*"
     },
     "require-dev": {
-        "phpunit/phpunit": "^7.2"
+        "phpunit/phpunit": "^6.5"
     },
     "license": "MIT",
     "authors": [
@@ -19,7 +19,8 @@
         "psr-4": {
             "Vehicles\\": "src/Vehicles/",
             "Vehicles\\Abstracts\\": "src/Vehicles/abstracts/",
-            "Auxiliary\\": "src/Auxiliary/"
+            "Auxiliary\\": "src/Auxiliary/",
+            "Tests\\": "tests/"
         }
     }
 }
